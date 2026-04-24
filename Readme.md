@@ -42,6 +42,14 @@ python monolith.py
 
 The image with the detected objects is generated to the result.jpg file.
 
+Something else:
+```
+sudo apt update
+sudo apt install -y libgl1
+wget https://raw.githubusercontent.com/opencv/opencv/master/samples/dnn/face_detector/deploy.prototxt -O MobileNetSSD_deploy.prototxt
+wget https://github.com/opencv/opencv_3rdparty/raw/dnn_samples_face_detector_20170830/res10_300x300_ssd_iter_140000.caffemodel -O MobileNetSSD_deploy.caffemodel
+```
+
 ## Your Task
 
 Your task is to decompose this monolithic application into the following microservices:
