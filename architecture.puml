@@ -1,0 +1,18 @@
+@startuml
+skinparam shadowing false
+skinparam componentStyle rectangle
+left to right direction
+actor "User / Operator" as User
+package System{
+    [ImageGrab]
+    [Resize]
+    [Grayscale]
+    [ObjectDetect]
+    [Tag]
+}
+User --> ImageGrab
+ImageGrab --> Resize
+Resize --> Grayscale
+Grayscale --> ObjectDetect
+ObjectDetect --> Tag
+@enduml
